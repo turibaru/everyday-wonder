@@ -1,3 +1,7 @@
+// The single sentence lives in entry.txt beside this script and is loaded when the program runs.
+// It is copied unchanged into a file called entry.txt inside the folder named by MAKEFUN_OUTPUT_DIR.
+// A blank or whitespace-only sentence is rejected, and so is any sentence longer than 200 characters.
+// On either rejection the program prints an error message and stops with exit code 1.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
